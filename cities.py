@@ -1,4 +1,3 @@
-from pydoc import describe
 
 
 def describe_city(city, country='iceland'):
