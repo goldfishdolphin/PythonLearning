@@ -1,9 +1,9 @@
-prompt= "\nPlease enter the name of a city you have visited: "
-prompt+= "\n(Enter 'quit' when you have finished.)"
+from pydoc import describe
 
-while True:
-    city=input(prompt)
-    if city == 'quit':
-        break
-    else:
-        print(f"I'd love to go to {city.title()}!")
+
+def describe_city(city, country='iceland'):
+    print(f"{city.title()} is in {country.title()}.")
+
+describe_city('rekjavic')
+describe_city('london',country='the uk')
+describe_city('paris',country='france')
